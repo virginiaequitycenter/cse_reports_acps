@@ -26,7 +26,7 @@ library(extrafont)
 # Pull in Self-Efficacy Data                    
 ##############################################################
 
-career <- read.csv("Fall 2024 Career Self Efficacy Deidentified Clean.csv")
+career <- read.csv("../data/Fall 2024 Career Self Efficacy Deidentified Clean.csv")
 
 career_narm <- career %>% drop_na(total_score)
 
@@ -89,6 +89,6 @@ ggplot() +
   labs(x="School", y="Career Self-Efficacy Score", 
        title="ACPS Career Self Efficacy Scores by School")
 
-ggsave("ACPS Career Self Efficacy Scores by School- 2024.pdf")
+ggsave("../plots/2024 ACPS Career Self Efficacy Scores by School.pdf")
 
 
