@@ -41,23 +41,22 @@ career_narm <- career %>% drop_na(total_score)
 
 mean_ACPS <- career_narm %>% summarise(mean_score=mean(total_score, na.rm=TRUE),
                                        obs=n())                                          
-
-career_burley <- subset(career_narm, school=="Jackson P. Burley Middle School")
+career_burley <- subset(career_narm, school=="Jackson P. Burley Middle school")
 mean_burley <- career_burley %>% summarise(mean_score=mean(total_score, na.rm=TRUE),
                                            obs=n())
-career_lab <- subset(career_narm, school=="Community Lab School")
+career_lab <- subset(career_narm, school=="Community Lab school")
 mean_lab <- career_lab %>% summarise(mean_score=mean(total_score, na.rm=TRUE),
                                      obs=n())
-career_henley <- subset(career_narm, school=="Joseph T. Henley Middle School")
+career_henley <- subset(career_narm, school=="Joseph T. Henley Middle school")
 mean_henley <- career_henley %>% summarise(mean_score=mean(total_score, na.rm=TRUE),
                                            obs=n())  
-career_journey <- subset(career_narm, school=="Journey Middle School")
+career_journey <- subset(career_narm, school=="Journey Middle school")
 mean_journey <- career_journey %>% summarise(mean_score=mean(total_score, na.rm=TRUE),
                                              obs=n())
-career_lakeside <- subset(career_narm, school=="Lakeside Middle School")
+career_lakeside <- subset(career_narm, school=="Lakeside Middle school")
 mean_lakeside <- career_lakeside %>% summarise(mean_score=mean(total_score, na.rm=TRUE),
                                                obs=n())
-career_walton <- subset(career_narm, school=="Leslie H. Walton Middle School")
+career_walton <- subset(career_narm, school=="Leslie H. Walton Middle school")
 mean_walton <- career_walton %>% summarise(mean_score=mean(total_score, na.rm=TRUE),
                                            obs=n())
 
